@@ -25,9 +25,3 @@ he/ she is in the delete mode.
 
 This avoid accidental deletion of the record.
 
-=====================================================================
-Things I thought of adding but could not:
-
-I could not add red color to the border of the textfield (FirstName, Last Name and Initial) to indicate
-that the name already exits. That would be more user friendly. 
-
