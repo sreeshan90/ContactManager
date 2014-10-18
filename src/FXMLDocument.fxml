@@ -12,320 +12,107 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
    <children>
-      <Pane fx:id="modifyPane" layoutX="712.0" prefHeight="764.0" prefWidth="710.0" visible="false" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="712.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+      <Pane fx:id="modifyPane" layoutX="707.0" layoutY="-11.0" prefHeight="766.0" prefWidth="710.0" visible="false" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="707.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="-11.0">
         <children>
            
-                <TextField fx:id="firstNameModify" layoutX="113.0" layoutY="144.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+     
+                           
+           <TextField fx:id="firstNameModify" layoutX="207.0" layoutY="61.0" prefHeight="28.0" prefWidth="359.0" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></TextField>
-               <TextField fx:id="middleInitialModify" layoutX="113.0" layoutY="183.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+            <TextField fx:id="middleInitialModify" layoutX="207.0" layoutY="111.0" prefHeight="28.0" prefWidth="359.0" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></TextField>
-               <TextField fx:id="lastNameModify" layoutX="113.0" layoutY="222.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+            <TextField fx:id="lastNameModify" layoutX="207.0" layoutY="161.0" prefHeight="28.0" prefWidth="359.0" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding>
-               </TextField>
-         
-                 <RadioButton fx:id="maleRadioModify" layoutX="108.0" layoutY="254.0" mnemonicParsing="false" text="M" visible="true">
+               </padding></TextField>
+             <RadioButton fx:id="maleRadioModify" layoutX="204.0" layoutY="211.0" mnemonicParsing="false" text="M" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></RadioButton>
-                <RadioButton fx:id="femaleRadioModify" layoutX="195.0" layoutY="255.0" mnemonicParsing="false" text="F" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></RadioButton>
-           
-                 <TextField fx:id="phoneNumberModify" layoutX="114.0" layoutY="299.0" prefHeight="28.0" prefWidth="359.0" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
-                <TextField fx:id="addr1Modify" layoutX="114.0" layoutY="341.0" prefHeight="28.0" prefWidth="359.0" visible="true" />
-               <TextField fx:id="addr2Modify" layoutX="114.0" layoutY="382.0" prefHeight="28.0" prefWidth="359.0" visible="true" />
-                <TextField fx:id="cityModify" layoutX="114.0" layoutY="422.0" prefHeight="28.0" prefWidth="359.0" visible="true" />
-                 <TextField fx:id="stateModify" layoutX="113.0" layoutY="461.0" prefHeight="28.0" prefWidth="359.0" visible="true" />
-                     <TextField fx:id="zipCodeModify" layoutX="113.0" layoutY="502.0" prefHeight="28.0" prefWidth="359.0" visible="true" />
-          
-                <Label layoutX="13.0" layoutY="461.0" text="State:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="13.0" layoutY="498.0" text="Zip Code:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="14.0" layoutY="338.0" text="Address 1:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-           
-            <Label layoutX="14.0" layoutY="419.0" text="City:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="14.0" layoutY="379.0" text="Address 2:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-       
-             
-            <Label layoutX="15.0" layoutY="296.0" text="Phone#: " visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-          
-            <Label layoutX="15.0" layoutY="251.0" text="Gender:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            
-            <Label layoutX="13.0" layoutY="178.0" text="Middle Initial:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="14.0" layoutY="216.0" text="Last Name:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            
-            <TextField fx:id="idModify" layoutX="313.0" layoutY="136.0" visible="false">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
-            <Label layoutX="14.0" layoutY="141.0" text="First Name:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            
-            <Label fx:id="successMessageModify" layoutX="225.0" layoutY="547.0" prefHeight="34.0" prefWidth="350.0" text="Added Successfully" textFill="#29b81a" visible="false">
-               <font>
-                  <Font name="AR HERMANN" size="20.0" />
-               </font>
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding>
-            </Label>
-            
-            <Button fx:id="saveButton" layoutX="197.0" layoutY="596.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="25.0" prefWidth="92.0" text="Save" />
-            <Button layoutX="309.0" layoutY="596.0" mnemonicParsing="false" onAction="#resetModifyPaneAction" prefHeight="25.0" prefWidth="92.0" text="Reset" />
-            <Label layoutX="297.0" layoutY="60.0" text="Modify Record">
-               <font>
-                  <Font name="AR HERMANN" size="26.0" />
-               </font>
-            </Label>
-            
-            <Label fx:id="nameErrorInlineMessageModify" layoutX="486.0" layoutY="144.0" prefHeight="28.0" prefWidth="200.0" text="Name already exits!" textFill="#eb0c0c" visible="false" />
-            <Text fx:id="requredFieldModify" fill="#e80505" layoutX="223.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* indicates mandatory fields" visible="false" />
-            <Text fill="#eb0000" layoutX="18.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#eb0000" layoutX="18.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#eb0000" layoutX="19.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#eb0000" layoutX="18.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#eb0000" layoutX="18.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#eb0000" layoutX="19.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#eb0000" layoutX="18.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#eb0000" layoutX="18.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-         </children>
-      </Pane>
-      <Pane fx:id="deletePane" layoutX="710.0" layoutY="1.0" prefHeight="760.0" prefWidth="710.0" visible="false" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="710.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
-         <children>
-           
-            
-             <Button fx:id="deleteConfirmButton" layoutX="197.0" layoutY="596.0" mnemonicParsing="false" onAction="#deleteActionConfirm" prefHeight="25.0" prefWidth="92.0" text="Confirm" />
-             <Button layoutX="309.0" layoutY="596.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="25.0" prefWidth="92.0" text="Cancel" />
-           
-            
-            <Label fx:id="successMessageDelete" layoutX="119.0" layoutY="547.0" prefHeight="34.0" prefWidth="376.0" text="Deleted Successfully" textFill="#29b81a" visible="false">
-               <font>
-                  <Font name="AR HERMANN" size="20.0" />
-               </font>
-            </Label>
-            <Label layoutX="16" layoutY="449.0" text="State:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16.0" layoutY="490.0" text="Zip Code:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16" layoutY="329.0" text="Address 1:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16" layoutY="410.0" text="City:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16" layoutY="368.0" text="Address 2:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16" layoutY="288.0" text="Phone#: " visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16" layoutY="249.0" text="Gender:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16" layoutY="174.0" text="Middle Initial:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label layoutX="16" layoutY="214.0" text="Last Name:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding> <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <TextField fx:id="idDelete" layoutX="313.0" layoutY="136.0" visible="false">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
-            <Label layoutX="14.0" layoutY="136.0" text="First Name:" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding>
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font></Label>
-            <Label fx:id="fNameDelValue" layoutX="150" layoutY="138.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="initialDelValue" layoutX="150" layoutY="175.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="lNameDelValue" layoutX="150" layoutY="214.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="genderDelValue" layoutX="150" layoutY="255.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="phoneDelValue" layoutX="150" layoutY="292.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="addr1DelValue" layoutX="150" layoutY="335.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="addr2DelValue" layoutX="150" layoutY="372.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="cityDelValue" layoutX="150" layoutY="419.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="stateDelValue" layoutX="150" layoutY="456.0" prefHeight="35" prefWidth="300.0" />
-            <Label fx:id="zipCodeDelValue" layoutX="150" layoutY="497.0" prefHeight="35" prefWidth="300.0" />
-            <Label layoutX="271.0" layoutY="63.0" text="Delete Record">
-               <font>
-                  <Font name="AR HERMANN" size="26.0" />
-               </font>
-            </Label>
-           
-         </children>
-      </Pane>
-      <Pane fx:id="addPane" layoutX="710.0" layoutY="2.0" prefHeight="766.0" prefWidth="710.0" visible="false" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="710.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-          <children>
-                          
-           <TextField fx:id="firstNameInput" layoutX="113.0" layoutY="144.0" prefHeight="28.0" prefWidth="359.0" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
-            <TextField fx:id="middleInitialInput" layoutX="113.0" layoutY="183.0" prefHeight="28.0" prefWidth="359.0" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
-            <TextField fx:id="lastNameInput" layoutX="112.0" layoutY="223.0" prefHeight="28.0" prefWidth="359.0" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
-             <RadioButton fx:id="maleRadio" layoutX="113.0" layoutY="254.0" mnemonicParsing="false" text="M" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></RadioButton>
-               <RadioButton fx:id="femaleRadio" layoutX="197.0" layoutY="254.0" mnemonicParsing="false" text="F" visible="true">
+               <RadioButton fx:id="femaleRadioModify" layoutX="284.0" layoutY="211.0" mnemonicParsing="false" text="F" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></RadioButton>
             
-            <TextField fx:id="phoneNumberInput" layoutX="114.0" layoutY="299.0" prefHeight="28.0" prefWidth="359.0" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
-             <TextField fx:id="addr1Input" layoutX="114.0" layoutY="341.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+            <TextField fx:id="phoneNumberModify" layoutX="207.0" layoutY="261.0" prefHeight="28.0" prefWidth="359.0" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></TextField>
                
-               <TextField fx:id="addr2Input" layoutX="114.0" layoutY="382.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+            <TextField fx:id="emailModify" layoutX="207.0" layoutY="311.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            
+            
+             <TextField fx:id="addr1Modify" layoutX="207.0" layoutY="361.0" prefHeight="28.0" prefWidth="359.0" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></TextField>
-            <TextField fx:id="cityInput" layoutX="114.0" layoutY="422.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               
+               <TextField fx:id="addr2Modify" layoutX="207.0" layoutY="411.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="cityModify" layoutX="207.0" layoutY="461.0" prefHeight="28.0" prefWidth="359.0" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></TextField>
            
-            <TextField fx:id="stateInput" layoutX="113.0" layoutY="461.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+            <TextField fx:id="stateModify" layoutX="207.0" layoutY="511.0" prefHeight="28.0" prefWidth="359.0" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></TextField>
-            <Label layoutX="13.0" layoutY="459.0" text="State:" visible="true">
+               <TextField fx:id="countryModify" layoutX="207.0" layoutY="561.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="zipCodeModify" layoutX="207.0" layoutY="611.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <Label layoutX="104.0" layoutY="558.0" text="Country:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label layoutX="13.0" layoutY="498.0" text="Zip Code:" visible="true">
+            <Label layoutX="104.0" layoutY="605.0" text="Zip Code:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label layoutX="14.0" layoutY="339.0" text="Address 1:" visible="true">
+            <Label layoutX="104.0" layoutY="356.0" text="Address 1:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
            
-            <Label layoutX="14.0" layoutY="419.0" text="City:" visible="true">
+            <Label layoutX="104.0" layoutY="456.0" text="City:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label layoutX="13.0" layoutY="379.0" text="Address 2:" visible="true">
+            <Label layoutX="104.0" layoutY="406.0" text="Address 2:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
            
-            <Label layoutX="15.0" layoutY="296.0" text="Phone#: " visible="true">
+            <Label layoutX="104.0" layoutY="258.0" text="Phone#: " visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
@@ -333,35 +120,32 @@
                </font></Label>
             
            
-            <Label layoutX="14.0" layoutY="253.0" text="Gender:" visible="true">
+            <Label layoutX="104.0" layoutY="211.0" text="Gender:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
           
-            <Label layoutX="13.0" layoutY="179.0" text="Middle Initial:" visible="true">
+            <Label layoutX="104.0" layoutY="107.0" text="Middle Initial:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label layoutX="14.0" layoutY="216.0" text="Last Name:" visible="true">
+            <Label layoutX="104.0" layoutY="155.0" text="Last Name:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding> <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-             <TextField fx:id="zipCodeInput" layoutX="113.0" layoutY="502.0" prefHeight="28.0" prefWidth="359.0" visible="true">
-               <padding>
-                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
-               </padding></TextField>
+             
 
-               <TextField fx:id="idAdd" layoutX="313.0" layoutY="136.0" visible="false">
+               <TextField fx:id="idModify" layoutX="407.0" layoutY="127.0" visible="false">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding></TextField>
-            <Label layoutX="14.0" layoutY="140.0" text="First Name:" visible="true">
+            <Label layoutX="104.0" layoutY="56.0" text="First Name:" visible="true">
                <padding>
                   <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
                </padding>
@@ -369,29 +153,352 @@
                   <Font name="System Bold" size="12.0" />
                </font></Label>
             
-            <Label fx:id="successMessage" layoutX="225.0" layoutY="547.0" prefHeight="34.0" prefWidth="350.0" text="Added Successfully" textAlignment="CENTER" textFill="#29b81a" visible="false">
+            <Label fx:id="successMessageModify" layoutX="280.0" layoutY="647.0" prefHeight="28.0" prefWidth="359.0" text="Added Successfully" textAlignment="CENTER" textFill="#29b81a" visible="false">
                <font>
                   <Font name="AR HERMANN" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="317.0" layoutY="64.0" text="Add Record">
+            <Label layoutX="317.0" layoutY="16.0" text="Modify Record">
               <font>
                   <Font name="AR HERMANN" size="26.0" />
                </font>
             </Label>
             
-             <Button fx:id="submitButton" layoutX="197.0" layoutY="596.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="25.0" prefWidth="92.0" text="Submit" />
-             <Button fx:id="resetAddButton" layoutX="309.0" layoutY="596.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="25.0" prefWidth="92.0" text="Reset" />
-            <Label fx:id="nameErrorInlineMessage" layoutX="486.0" layoutY="144.0" prefHeight="28.0" prefWidth="200.0" text="Name already exits!" textFill="#eb0c0c" visible="false" />
-            <Text fx:id="requiredFielAdd" fill="#ee1616" layoutX="225.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* indicates madatory field" visible="false" wrappingWidth="167.349609375" />
-            <Text fill="#ff2222" layoutX="19.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#ff2222" layoutX="19.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#ff2222" layoutX="19.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#ff2222" layoutX="20.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#ff2222" layoutX="20.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#ff2222" layoutX="18.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#ff2222" layoutX="18.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
-            <Text fill="#ff2222" layoutX="18.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+             <Button fx:id="saveButton" layoutX="265.0" layoutY="680.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="25.0" prefWidth="92.0" text="Save" />
+             <Button fx:id="reset" layoutX="376.0" layoutY="680.0" mnemonicParsing="false" onAction="#resetModifyPaneAction" prefHeight="25.0" prefWidth="92.0" text="Reset" />
+              <Label fx:id="nameErrorInlineMessageModify" layoutX="580.0" layoutY="60.0" prefHeight="28.0" prefWidth="200.0" text="Name exists!" textFill="#eb0c0c" visible="false" />
+             <Text fx:id="requiredFieldModify" fill="#ee1616" layoutX="289.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* indicates madatory field" visible="false" wrappingWidth="169.55859375" />
+            <Text fill="#ff2222" layoutX="108.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="110.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="108.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Label layoutX="104.0" layoutY="506.0" text="State:" visible="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            
+            <Text fill="#ff2222" layoutX="110.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Label layoutX="104.0" layoutY="307.0" text="Email: " visible="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="deletePane" visible="false"  layoutX="710.0" layoutY="1.0" prefHeight="760.0" prefWidth="710.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="710.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+           
+                
+             <Button fx:id="deleteConfirmButton" layoutX="265.0" layoutY="675.0" mnemonicParsing="false" onAction="#deleteActionConfirm" prefHeight="25.0" prefWidth="92.0" text="Confirm" />
+             <Button layoutX="376.0" layoutY="675"  mnemonicParsing="false" onAction="#cancelAction" prefHeight="25.0" prefWidth="92.0" text="Cancel" />
+           
+            
+            <Label fx:id="successMessageDelete" layoutX="185.0" layoutY="640.0" prefHeight="34.0" prefWidth="376.0" text="Deleted Successfully" textFill="#29b81a" visible="false">
+               <font>
+                  <Font name="AR HERMANN" size="20.0" />
+               </font>
+            </Label>
+             <Label layoutX="138.0" layoutY="558.0" text="Country:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="605.0" text="Zip Code:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="356.0" text="Address 1:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+           
+            <Label layoutX="138.0" layoutY="456.0" text="City:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="406.0" text="Address 2:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+           
+            <Label layoutX="138.0" layoutY="258.0" text="Phone#: " visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            
+           
+            <Label layoutX="138.0" layoutY="209.0" text="Gender:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+          
+            <Label layoutX="138.0" layoutY="107.0" text="Middle Initial:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="155.0" text="Last Name:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+             
+
+            <Label layoutX="138.0" layoutY="56.0" text="First Name:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="idDelete" layoutX="527.0" layoutY="136.0" visible="false">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+               <Label layoutX="138.0" layoutY="506.0" text="State:" visible="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="138.0" layoutY="309.0" text="Email: " visible="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+           
+            <Label fx:id="fNameDelValue"  layoutX="241.0" layoutY="61.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="initialDelValue"  layoutX="241.0" layoutY="109.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="lNameDelValue" layoutX="241.0" layoutY="159.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3PX; -fx-label-padding: 5px 5px 5px 5px;"/>
+            <Label fx:id="genderDelValue" layoutX="241.0" layoutY="211.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="phoneDelValue" layoutX="241.0" layoutY="260.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="emailDelValue" layoutX="241.0" layoutY="310.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="addr1DelValue" layoutX="241.0" layoutY="360.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="addr2DelValue" layoutX="241.0" layoutY="409.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="cityDelValue" layoutX="241.0" layoutY="459.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="stateDelValue" layoutX="241.0" layoutY="508.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+             <Label fx:id="countryDelValue" layoutX="241.0" layoutY="559.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label fx:id="zipCodeDelValue" layoutX="241.0" layoutY="603.0" prefHeight="35" prefWidth="300.0" style="-fx-border-color: grey; -fx-border-radius: 3px; -fx-label-padding: 5px 5px 5px 5px;" />
+            <Label layoutX="317.0" layoutY="16.0" text="Delete Record">
+               <font>
+                  <Font name="AR HERMANN" size="26.0" />
+               </font>
+            </Label>
+           
+         </children>
+      </Pane>
+      <Pane fx:id="addPane" layoutX="707.0" layoutY="-11.0" prefHeight="766.0" prefWidth="710.0" visible="false" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="707.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="-11.0">
+          <children>
+                          
+           <TextField fx:id="firstNameInput" layoutX="207.0" layoutY="61.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="middleInitialInput" layoutX="207.0" layoutY="111.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="lastNameInput" layoutX="207.0" layoutY="161.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+             <RadioButton fx:id="maleRadio" layoutX="204.0" layoutY="211.0" mnemonicParsing="false" text="M" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></RadioButton>
+               <RadioButton fx:id="femaleRadio" layoutX="284.0" layoutY="211.0" mnemonicParsing="false" text="F" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></RadioButton>
+            
+            <TextField fx:id="phoneNumberInput" layoutX="207.0" layoutY="261.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+               
+            <TextField fx:id="emailInput" layoutX="207.0" layoutY="311.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            
+            
+             <TextField fx:id="addr1Input" layoutX="207.0" layoutY="361.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+               
+               <TextField fx:id="addr2Input" layoutX="207.0" layoutY="411.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+            <TextField fx:id="cityInput" layoutX="207.0" layoutY="461.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+           
+            <TextField fx:id="stateInput" layoutX="207.0" layoutY="511.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+               <TextField fx:id="countryInput" layoutX="207.0" layoutY="561.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="zipCodeInput" layoutX="207.0" layoutY="611.0" prefHeight="28.0" prefWidth="359.0" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <Label layoutX="104.0" layoutY="558.0" text="Country:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="104.0" layoutY="605.0" text="Zip Code:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="104.0" layoutY="356.0" text="Address 1:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+           
+            <Label layoutX="104.0" layoutY="456.0" text="City:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="104.0" layoutY="406.0" text="Address 2:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+           
+            <Label layoutX="104.0" layoutY="258.0" text="Phone#: " visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            
+           
+            <Label layoutX="104.0" layoutY="211.0" text="Gender:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+          
+            <Label layoutX="104.0" layoutY="107.0" text="Middle Initial:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="104.0" layoutY="155.0" text="Last Name:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding> <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+             
+
+               <TextField fx:id="idAdd" layoutX="407.0" layoutY="127.0" visible="false">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding></TextField>
+            <Label layoutX="104.0" layoutY="56.0" text="First Name:" visible="true">
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            
+            <Label fx:id="successMessage" layoutX="280.0" layoutY="647.0" prefHeight="28.0" prefWidth="359.0" text="Added Successfully" textAlignment="CENTER" textFill="#29b81a" visible="false">
+               <font>
+                  <Font name="AR HERMANN" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="317.0" layoutY="16.0" text="Add Record">
+              <font>
+                  <Font name="AR HERMANN" size="26.0" />
+               </font>
+            </Label>
+            
+             <Button fx:id="submitButton" layoutX="265.0" layoutY="680.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="25.0" prefWidth="92.0" text="Submit" />
+             <Button fx:id="resetAddButton" layoutX="376.0" layoutY="680.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="25.0" prefWidth="92.0" text="Reset" />
+            <Label fx:id="nameErrorInlineMessage" layoutX="580.0" layoutY="60.0" prefHeight="28.0" prefWidth="200.0" text="Name exists!" textFill="#eb0c0c" visible="false" />
+            <Text fx:id="requiredFielAdd" fill="#ee1616" layoutX="289.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* indicates madatory field" visible="false" wrappingWidth="169.55859375" />
+            <Text fill="#ff2222" layoutX="108.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="110.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="108.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Text fill="#ff2222" layoutX="109.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Label layoutX="104.0" layoutY="506.0" text="State:" visible="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            
+            <Text fill="#ff2222" layoutX="110.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="15.0" />
+            <Label layoutX="104.0" layoutY="307.0" text="Email: " visible="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            
          </children>
       </Pane>
       <Label fx:id="welcomeNote" layoutX="926.0" layoutY="298.0" text="WELCOME!">
@@ -399,7 +506,7 @@
             <Font name="AR HERMANN" size="42.0" />
          </font>
       </Label>
-      <TableView fx:id="tableView" layoutX="133.0" layoutY="51.0" onMouseClicked="#selectTableActionResponse" prefHeight="522.0" prefWidth="445.0">
+      <TableView fx:id="tableView" layoutX="68.0" layoutY="57.0" onMouseClicked="#selectTableActionResponse" prefHeight="522.0" prefWidth="524.0">
          <columns>
             <TableColumn fx:id="firstNameTable" editable="false" prefWidth="94.0" sortable="true" text="First Name" />
             <TableColumn fx:id="lNameTable" prefWidth="150.66668701171875" sortable="true" text="Last Name" />
@@ -412,9 +519,9 @@
          
          
       </TableView>
-      <Button fx:id="deleteButton" disable="true" layoutX="402.0" layoutY="631.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="20.0" prefWidth="85.0" text="Delete Row" />
-      <Button fx:id="modifyButton" disable="true" layoutX="302.0" layoutY="631.0" mnemonicParsing="false" onAction="#modifyAction" prefHeight="20.0" prefWidth="85.0" text="Modify Row" />
-      <Button fx:id="addRowButton" layoutX="201.0" layoutY="631.0" mnemonicParsing="false" onAction="#addAction" prefHeight="20.0" prefWidth="85.0" text="Add Row" />
+      <Button fx:id="deleteButton" disable="true" layoutX="382.0" layoutY="672.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="20.0" prefWidth="85.0" text="Delete Row" />
+      <Button fx:id="modifyButton" disable="true" layoutX="282.0" layoutY="672.0" mnemonicParsing="false" onAction="#modifyAction" prefHeight="20.0" prefWidth="85.0" text="Modify Row" />
+      <Button fx:id="addRowButton" layoutX="182.0" layoutY="672.0" mnemonicParsing="false" onAction="#addAction" prefHeight="20.0" prefWidth="85.0" text="Add Row" />
       <Separator layoutX="707.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="766.0" prefWidth="15.0" />
    </children>
 </AnchorPane>
