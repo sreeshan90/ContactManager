@@ -13,6 +13,11 @@ import java.io.PrintWriter;
 import java.io.Writer;
 import java.nio.channels.FileChannel;
 import java.util.Scanner;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.event.EventHandler;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 
 /**
  *
@@ -20,6 +25,8 @@ import java.util.Scanner;
  */
 public class Service {
     
+     
+      
     // Checks if the name already exits in file
     public static boolean checkNames(String fName,String initial, String lName) throws FileNotFoundException{
        
@@ -58,7 +65,7 @@ public class Service {
         
     
         String storeLine = p.getFirstName()+"!"+p.getLastName()+"!"+p.getMiddleInitial()+"!"+p.getAddr1()+"!"+p.getAddr2()+"!"+p.getCity()+
-                            "!"+p.getState()+"!"+p.getZipCode()+"!"+p.getPhoneNumber()+"!"+p.getGender()+"!"+p.getId();
+                            "!"+p.getState()+"!"+p.getZipCode()+"!"+p.getCountry()+"!"+p.getEmail()+"!"+p.getPhoneNumber()+"!"+p.getGender()+"!"+p.getId();
         
         return storeLine;
         
@@ -145,6 +152,20 @@ public class Service {
             System.out.println("Error occured! File: " + file2.getName() + " is not deleted!");
         }
     }
-
+    
 }
+    
+public static void addTextLimiter(final TextField tf, final int maxLength) {
+    tf.textProperty().addListener(new ChangeListener<String>() {
+        @Override
+        public void changed(final ObservableValue<? extends String> ov, final String oldValue, final String newValue) {
+            if (tf.getText().length() > maxLength) {
+                String s = tf.getText().substring(0, maxLength);
+                tf.setText(s);
+            }
+        }
+    });
+    
+}
+
 }
